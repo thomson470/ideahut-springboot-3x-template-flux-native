@@ -5,7 +5,7 @@ debug: false
 
 spring:
    application:
-      name: ideahut-springboot-3x-template-flux-native
+      name: "ideahut-springboot-3x-template-flux-native"
    quartz:
       auto-startup: false
    servlet:
@@ -24,7 +24,7 @@ spring:
          max-lifetime: "1000"
          auto-commit: "true"
       driver-class-name: "com.mysql.cj.jdbc.Driver"
-      jdbc-url: "jdbc:mysql://localhost:3306/springboot_sample_main?createDatabaseIfNotExist=true&autoReconnect=true"
+      jdbc-url: "jdbc:mysql://localhost:3306/sbflux_sample_main?createDatabaseIfNotExist=true&autoReconnect=true"
       username: "root"
       password: "a3213c419771fbd1a05cdde7127e6393ef852db97328b21a45de700e9bbe85db"
    jpa:
@@ -45,6 +45,7 @@ app:
    autoStartScheduler: false
    messagePath: "file:{user.dir}/extras/message/"
    reportPath: "file:{user.dir}/extras/report/"
+   kafkaConfigurationFile: "file:{user.dir}/extras/kafka/kafka1.yaml"
    
    cors:
       "Access-Control-Allow-Credentials": "true"
@@ -57,15 +58,19 @@ app:
    ignored-handler-classes:
       - org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController
    
+   #
+   # Model / Entity yang punya annotation @ForeignKeyEntity akan dieksekusi
+   # Beberapa database tidak support "... on update (CASCADE/SET_NULL)"
+   #
    foreignKey:
-      enableExecution: true
+      enableExecution: false
       dropBeforeCreate: true
       onUpdateAction: true 
       
    audit:
       datasource:
          driver-class-name: "com.mysql.cj.jdbc.Driver"
-         jdbc-url: "jdbc:mysql://localhost:3306/springboot_sample_main_audit?createDatabaseIfNotExist=true&autoReconnect=true"
+         jdbc-url: "jdbc:mysql://localhost:3306/sbflux_sample_main_audit?createDatabaseIfNotExist=true&autoReconnect=true"
          username: "root"
          password: "a3213c419771fbd1a05cdde7127e6393ef852db97328b21a45de700e9bbe85db"
       jpa:
@@ -97,8 +102,7 @@ app:
 
    redis:
       common:
-         type: 1
-         testOnStartup: true
+         type: 0
          standalone:
             host: 127.0.0.1
             port: 6380
@@ -141,11 +145,16 @@ app:
       #definition: "file:{user.dir}/extras/grid/grid.def"
 
    admin:
-      configFile: "file:{user.dir}/extras/admin/config.json"
-      credentialFile: "file:{user.dir}/extras/admin/credential-bcrypt.json"
-      #credentialFile: "file:{user.dir}/extras/admin/credential-sha256.json"
+      configurationFile: "file:{user.dir}/extras/admin/configuration.yaml"
+      credentialFile: "file:{user.dir}/extras/admin/credential.yaml"
+      apiPath: "/_/api"
+      webPath: "/_/web"
+      webLocation: "file:{user.dir}/extras/admin/web/"
+      webEnabled: true
+      useBasicAuth: false
 
    api:
+      name: "TEMPLATE-FLUX"
       enable:
          consumer: true
          crud: true
@@ -178,13 +187,21 @@ app:
       threadNamePrefix: "WEB-ASYNC"
       corePoolSize: 10
       maxPoolSize: 100
+      
+   crud:
+      enableApiService: true
+      enablePermission: true
+      
+   handler:
+      enableReport: true
+      enableKafka: true
 
 other:   
    trxManager:
       second:
          datasource:
             driver-class-name: "com.mysql.cj.jdbc.Driver"
-            jdbc-url: "jdbc:mysql://localhost:3306/springboot_sample_other?createDatabaseIfNotExist=true&autoReconnect=true"
+            jdbc-url: "jdbc:mysql://localhost:3306/sbflux_sample_other?createDatabaseIfNotExist=true&autoReconnect=true"
             username: "root"
             password: "a3213c419771fbd1a05cdde7127e6393ef852db97328b21a45de700e9bbe85db"  
          jpa:
@@ -198,7 +215,7 @@ other:
          audit:
             datasource:
                driver-class-name: "com.mysql.cj.jdbc.Driver"
-               jdbc-url: "jdbc:mysql://localhost:3306/springboot_sample_other_audit?createDatabaseIfNotExist=true&autoReconnect=true"
+               jdbc-url: "jdbc:mysql://localhost:3306/sbflux_sample_other_audit?createDatabaseIfNotExist=true&autoReconnect=true"
                username: "root"
                password: "a3213c419771fbd1a05cdde7127e6393ef852db97328b21a45de700e9bbe85db"
             jpa:
