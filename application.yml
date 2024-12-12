@@ -44,7 +44,6 @@ app:
    loggingError: true
    autoStartScheduler: false
    messagePath: "file:{user.dir}/extras/message/"
-   reportPath: "file:{user.dir}/extras/report/"
    kafkaConfigurationFile: "file:{user.dir}/extras/kafka/kafka1.yaml"
    
    cors:
@@ -63,7 +62,7 @@ app:
    # Beberapa database tidak support "... on update (CASCADE/SET_NULL)"
    #
    foreignKey:
-      enableExecution: false
+      enableExecution: true
       dropBeforeCreate: true
       onUpdateAction: true 
       
@@ -193,7 +192,6 @@ app:
       enablePermission: true
       
    handler:
-      enableReport: true
       enableKafka: true
 
 other:   
