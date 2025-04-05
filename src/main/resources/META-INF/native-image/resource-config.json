@@ -223,6 +223,8 @@
   }, {
     "pattern":"jdk.internal.vm.compiler:\\Qorg/graalvm/compiler/replacements/StringLatin1Snippets.class\\E"
   }, {
+    "pattern":"jdk.internal.vm.compiler:\\Qorg/graalvm/compiler/replacements/aarch64/AArch64IntegerArithmeticSnippets.class\\E"
+  }, {
     "pattern":"jdk.internal.vm.compiler:\\Qorg/graalvm/compiler/replacements/amd64/AMD64ConvertSnippets.class\\E"
   }, {
     "pattern":"jdk.internal.vm.compiler:\\Qorg/graalvm/compiler/replacements/arraycopy/ArrayCopyCallNode.class\\E"
@@ -232,6 +234,8 @@
     "pattern":"jdk.internal.vm.compiler:\\Qorg/graalvm/compiler/replacements/arraycopy/ArrayCopyWithDelayedLoweringNode.class\\E"
   }, {
     "pattern":"jdk.internal.vm.compiler:\\Qorg/graalvm/compiler/replacements/gc/G1WriteBarrierSnippets.class\\E"
+  }, {
+    "pattern":"org.graalvm.sdk:\\Qorg/graalvm/word/LocationIdentity.class\\E"
   }]},
   "bundles":[{
     "name":"com.mysql.cj.LocalizedErrorMessages",
