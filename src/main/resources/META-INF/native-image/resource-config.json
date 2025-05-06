@@ -17,13 +17,9 @@
   }, {
     "pattern":"\\QMETA-INF/mimetypes.default\\E"
   }, {
-    "pattern":"\\QMETA-INF/native/libnetty_resolver_dns_native_macos_x86_64.jnilib\\E"
-  }, {
     "pattern":"\\QMETA-INF/services/ch.qos.logback.classic.spi.Configurator\\E"
   }, {
     "pattern":"\\QMETA-INF/services/com.fasterxml.jackson.databind.Module\\E"
-  }, {
-    "pattern":"\\QMETA-INF/services/io.jsonwebtoken.io.Deserializer\\E"
   }, {
     "pattern":"\\QMETA-INF/services/io.jsonwebtoken.io.Serializer\\E"
   }, {
@@ -135,8 +131,6 @@
   }, {
     "pattern":"java.base:\\Qjava/lang/Double.class\\E"
   }, {
-    "pattern":"java.base:\\Qjava/lang/Float.class\\E"
-  }, {
     "pattern":"java.base:\\Qjava/lang/Integer.class\\E"
   }, {
     "pattern":"java.base:\\Qjava/lang/Long.class\\E"
@@ -224,8 +218,6 @@
     "pattern":"jdk.internal.vm.compiler:\\Qorg/graalvm/compiler/replacements/StringLatin1Snippets.class\\E"
   }, {
     "pattern":"jdk.internal.vm.compiler:\\Qorg/graalvm/compiler/replacements/aarch64/AArch64IntegerArithmeticSnippets.class\\E"
-  }, {
-    "pattern":"jdk.internal.vm.compiler:\\Qorg/graalvm/compiler/replacements/amd64/AMD64ConvertSnippets.class\\E"
   }, {
     "pattern":"jdk.internal.vm.compiler:\\Qorg/graalvm/compiler/replacements/arraycopy/ArrayCopyCallNode.class\\E"
   }, {
