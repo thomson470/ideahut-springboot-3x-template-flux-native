@@ -470,6 +470,10 @@
   "methods":[{"name":"<init>","parameterTypes":["java.lang.String"] }]
 },
 {
+  "name":"com.mysql.cj.exceptions.StatementIsClosedException",
+  "methods":[{"name":"<init>","parameterTypes":["java.lang.String"] }]
+},
+{
   "name":"com.mysql.cj.jdbc.AbandonedConnectionCleanupThread"
 },
 {
@@ -3028,6 +3032,13 @@
   "name":"net.ideahut.springboot.crud.CrudHelper1"
 },
 {
+  "name":"net.ideahut.springboot.crud.CrudInput",
+  "allDeclaredFields":true,
+  "queryAllDeclaredMethods":true,
+  "queryAllDeclaredConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }, {"name":"getData","parameterTypes":[] }, {"name":"getExcludes","parameterTypes":[] }, {"name":"getFields","parameterTypes":[] }, {"name":"getFilters","parameterTypes":[] }, {"name":"getId","parameterTypes":[] }, {"name":"getLoads","parameterTypes":[] }, {"name":"getManager","parameterTypes":[] }, {"name":"getName","parameterTypes":[] }, {"name":"getOrders","parameterTypes":[] }, {"name":"getPage","parameterTypes":[] }, {"name":"getValue","parameterTypes":[] }, {"name":"setData","parameterTypes":["byte[]"] }, {"name":"setExcludes","parameterTypes":["java.lang.String"] }, {"name":"setFields","parameterTypes":["java.lang.String"] }, {"name":"setFilters","parameterTypes":["java.lang.String"] }, {"name":"setId","parameterTypes":["java.lang.String"] }, {"name":"setLoads","parameterTypes":["java.lang.String"] }, {"name":"setManager","parameterTypes":["java.lang.String"] }, {"name":"setName","parameterTypes":["java.lang.String"] }, {"name":"setOrders","parameterTypes":["java.lang.String"] }, {"name":"setPage","parameterTypes":["net.ideahut.springboot.object.Page"] }, {"name":"setValue","parameterTypes":["java.lang.String"] }]
+},
+{
   "name":"net.ideahut.springboot.crud.CrudMap",
   "allDeclaredFields":true,
   "queryAllDeclaredMethods":true,
@@ -3057,7 +3068,7 @@
   "allDeclaredFields":true,
   "queryAllDeclaredMethods":true,
   "queryAllDeclaredConstructors":true,
-  "methods":[{"name":"<init>","parameterTypes":[] }, {"name":"getFields","parameterTypes":[] }, {"name":"getFilters","parameterTypes":[] }, {"name":"getIds","parameterTypes":[] }, {"name":"getJoins","parameterTypes":[] }, {"name":"getLimit","parameterTypes":[] }, {"name":"getLoads","parameterTypes":[] }, {"name":"getManager","parameterTypes":[] }, {"name":"getMap","parameterTypes":[] }, {"name":"getName","parameterTypes":[] }, {"name":"getOrders","parameterTypes":[] }, {"name":"getPage","parameterTypes":[] }, {"name":"getReplica","parameterTypes":[] }, {"name":"getStacks","parameterTypes":[] }, {"name":"getStart","parameterTypes":[] }, {"name":"getValues","parameterTypes":[] }, {"name":"setFields","parameterTypes":["java.util.List"] }, {"name":"setFilters","parameterTypes":["java.util.List"] }, {"name":"setIds","parameterTypes":["java.util.List"] }, {"name":"setJoins","parameterTypes":["java.util.List"] }, {"name":"setLimit","parameterTypes":["java.lang.Integer"] }, {"name":"setLoads","parameterTypes":["java.util.List"] }, {"name":"setManager","parameterTypes":["java.lang.String"] }, {"name":"setMap","parameterTypes":["net.ideahut.springboot.crud.CrudMap"] }, {"name":"setName","parameterTypes":["java.lang.String"] }, {"name":"setOrders","parameterTypes":["java.util.List"] }, {"name":"setPage","parameterTypes":["net.ideahut.springboot.object.Page"] }, {"name":"setReplica","parameterTypes":["java.lang.Integer"] }, {"name":"setStacks","parameterTypes":["java.util.List"] }, {"name":"setStart","parameterTypes":["java.lang.Integer"] }, {"name":"setValues","parameterTypes":["java.util.List"] }]
+  "methods":[{"name":"<init>","parameterTypes":[] }, {"name":"getExcludes","parameterTypes":[] }, {"name":"getFields","parameterTypes":[] }, {"name":"getFilters","parameterTypes":[] }, {"name":"getIds","parameterTypes":[] }, {"name":"getJoins","parameterTypes":[] }, {"name":"getLimit","parameterTypes":[] }, {"name":"getLoads","parameterTypes":[] }, {"name":"getManager","parameterTypes":[] }, {"name":"getMap","parameterTypes":[] }, {"name":"getName","parameterTypes":[] }, {"name":"getOrders","parameterTypes":[] }, {"name":"getPage","parameterTypes":[] }, {"name":"getReplica","parameterTypes":[] }, {"name":"getStacks","parameterTypes":[] }, {"name":"getStart","parameterTypes":[] }, {"name":"getValues","parameterTypes":[] }, {"name":"setExcludes","parameterTypes":["java.util.List"] }, {"name":"setFields","parameterTypes":["java.util.List"] }, {"name":"setFilters","parameterTypes":["java.util.List"] }, {"name":"setIds","parameterTypes":["java.util.List"] }, {"name":"setJoins","parameterTypes":["java.util.List"] }, {"name":"setLimit","parameterTypes":["java.lang.Integer"] }, {"name":"setLoads","parameterTypes":["java.util.List"] }, {"name":"setManager","parameterTypes":["java.lang.String"] }, {"name":"setMap","parameterTypes":["net.ideahut.springboot.crud.CrudMap"] }, {"name":"setName","parameterTypes":["java.lang.String"] }, {"name":"setOrders","parameterTypes":["java.util.List"] }, {"name":"setPage","parameterTypes":["net.ideahut.springboot.object.Page"] }, {"name":"setReplica","parameterTypes":["java.lang.Integer"] }, {"name":"setStacks","parameterTypes":["java.util.List"] }, {"name":"setStart","parameterTypes":["java.lang.Integer"] }, {"name":"setValues","parameterTypes":["java.util.List"] }]
 },
 {
   "name":"net.ideahut.springboot.crud.CrudResource",
@@ -3121,7 +3132,7 @@
   "allDeclaredFields":true,
   "queryAllDeclaredMethods":true,
   "queryAllDeclaredConstructors":true,
-  "methods":[{"name":"<init>","parameterTypes":[] }, {"name":"getAlias","parameterTypes":[] }, {"name":"getFields","parameterTypes":[] }, {"name":"getMatch","parameterTypes":[] }, {"name":"getName","parameterTypes":[] }, {"name":"getRelations","parameterTypes":[] }, {"name":"getReplica","parameterTypes":[] }, {"name":"getSelect","parameterTypes":[] }, {"name":"getStore","parameterTypes":[] }, {"name":"setAlias","parameterTypes":["java.lang.String"] }, {"name":"setFields","parameterTypes":["java.util.List"] }, {"name":"setMatch","parameterTypes":["net.ideahut.springboot.crud.Match"] }, {"name":"setName","parameterTypes":["java.lang.String"] }, {"name":"setRelations","parameterTypes":["java.util.List"] }, {"name":"setReplica","parameterTypes":["java.lang.Integer"] }, {"name":"setSelect","parameterTypes":["java.lang.Boolean"] }, {"name":"setStore","parameterTypes":["java.lang.String"] }]
+  "methods":[{"name":"<init>","parameterTypes":[] }, {"name":"getAlias","parameterTypes":[] }, {"name":"getExcludes","parameterTypes":[] }, {"name":"getFields","parameterTypes":[] }, {"name":"getMatch","parameterTypes":[] }, {"name":"getName","parameterTypes":[] }, {"name":"getRelations","parameterTypes":[] }, {"name":"getReplica","parameterTypes":[] }, {"name":"getSelect","parameterTypes":[] }, {"name":"getStore","parameterTypes":[] }, {"name":"setAlias","parameterTypes":["java.lang.String"] }, {"name":"setExcludes","parameterTypes":["java.util.List"] }, {"name":"setFields","parameterTypes":["java.util.List"] }, {"name":"setMatch","parameterTypes":["net.ideahut.springboot.crud.Match"] }, {"name":"setName","parameterTypes":["java.lang.String"] }, {"name":"setRelations","parameterTypes":["java.util.List"] }, {"name":"setReplica","parameterTypes":["java.lang.Integer"] }, {"name":"setSelect","parameterTypes":["java.lang.Boolean"] }, {"name":"setStore","parameterTypes":["java.lang.String"] }]
 },
 {
   "name":"net.ideahut.springboot.crud.Logical",
@@ -4650,7 +4661,7 @@
 {
   "name":"net.ideahut.springboot.template.controller.CrudController",
   "queryAllDeclaredMethods":true,
-  "methods":[{"name":"<init>","parameterTypes":["net.ideahut.springboot.crud.CrudHandler","net.ideahut.springboot.crud.CrudPermission"] }, {"name":"action","parameterTypes":["java.lang.String","org.springframework.http.server.reactive.ServerHttpRequest"] }, {"name":"infoConstant","parameterTypes":[] }]
+  "methods":[{"name":"<init>","parameterTypes":["net.ideahut.springboot.crud.CrudHandler","net.ideahut.springboot.crud.CrudPermission"] }, {"name":"action","parameterTypes":["java.lang.String","org.springframework.http.server.reactive.ServerHttpRequest"] }, {"name":"collection","parameterTypes":["java.lang.String","java.lang.Integer","java.lang.Integer","java.lang.String","java.lang.String","java.lang.String","java.lang.String","java.lang.String","java.lang.String","java.lang.String"] }, {"name":"create","parameterTypes":["java.lang.String","java.lang.String","java.lang.String","org.springframework.http.server.reactive.ServerHttpRequest"] }, {"name":"infoConstant","parameterTypes":[] }, {"name":"object","parameterTypes":["java.lang.String","java.lang.String","java.lang.String"] }]
 },
 {
   "name":"net.ideahut.springboot.template.controller.DevController",
@@ -4952,6 +4963,11 @@
   "methods":[{"name":"<init>","parameterTypes":[] }, {"name":"get$$_hibernate_attributeInterceptor","parameterTypes":[] }, {"name":"get$$_hibernate_entityEntryHolder","parameterTypes":[] }, {"name":"get$$_hibernate_nextManagedEntity","parameterTypes":[] }, {"name":"get$$_hibernate_previousManagedEntity","parameterTypes":[] }, {"name":"get$$_hibernate_tracker","parameterTypes":[] }, {"name":"getCreatedOn","parameterTypes":[] }, {"name":"getId","parameterTypes":[] }, {"name":"getOther","parameterTypes":[] }, {"name":"getUser","parameterTypes":[] }, {"name":"setCreatedOn","parameterTypes":["java.lang.Long"] }, {"name":"setId","parameterTypes":["net.ideahut.springboot.template.entity.app.UserFavoriteId"] }, {"name":"setOther","parameterTypes":["net.ideahut.springboot.template.entity.app.User"] }, {"name":"setUser","parameterTypes":["net.ideahut.springboot.template.entity.app.User"] }]
 },
 {
+  "name":"net.ideahut.springboot.template.entity.app.UserFavorite$HibernateAccessOptimizer$5rMz8Ulu",
+  "fields":[{"name":"invocationTarget$mt6lhq0"}],
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
   "name":"net.ideahut.springboot.template.entity.app.UserFavorite$HibernateAccessOptimizer$813b5sb2",
   "fields":[{"name":"invocationTarget$q9qujt0"}],
   "methods":[{"name":"<init>","parameterTypes":[] }]
@@ -4963,6 +4979,11 @@
 },
 {
   "name":"net.ideahut.springboot.template.entity.app.UserFavorite$HibernateAccessOptimizer$CSCS1C6m",
+  "fields":[{"name":"invocationTarget$4dgaqt0"}],
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"net.ideahut.springboot.template.entity.app.UserFavorite$HibernateAccessOptimizer$JjBqtxWW",
   "fields":[{"name":"invocationTarget$4dgaqt0"}],
   "methods":[{"name":"<init>","parameterTypes":[] }]
 },
@@ -4984,6 +5005,11 @@
 {
   "name":"net.ideahut.springboot.template.entity.app.UserFavorite$HibernateAccessOptimizer$oq3SO5aF",
   "fields":[{"name":"invocationTarget$rnu6vc0"}],
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"net.ideahut.springboot.template.entity.app.UserFavorite$HibernateAccessOptimizer$qQiIyWn0",
+  "fields":[{"name":"invocationTarget$sf00ne0"}],
   "methods":[{"name":"<init>","parameterTypes":[] }]
 },
 {
@@ -5025,11 +5051,23 @@
   "methods":[{"name":"<init>","parameterTypes":[] }]
 },
 {
+  "name":"net.ideahut.springboot.template.entity.app.UserFavorite$HibernateInstantiator$aHO80LT2",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"net.ideahut.springboot.template.entity.app.UserFavorite$HibernateInstantiator$ioQw94A1",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
   "name":"net.ideahut.springboot.template.entity.app.UserFavorite$HibernateInstantiator$jX9CBmZO",
   "methods":[{"name":"<init>","parameterTypes":[] }]
 },
 {
   "name":"net.ideahut.springboot.template.entity.app.UserFavorite$HibernateInstantiator$ncLAX2vM",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"net.ideahut.springboot.template.entity.app.UserFavorite$HibernateInstantiator$tgkbrfki",
   "methods":[{"name":"<init>","parameterTypes":[] }]
 },
 {
@@ -5467,6 +5505,9 @@
   "name":"org.hibernate.action.internal.EntityInsertAction"
 },
 {
+  "name":"org.hibernate.action.internal.EntityUpdateAction"
+},
+{
   "name":"org.hibernate.annotations.GenericGenerator",
   "queryAllDeclaredMethods":true,
   "methods":[{"name":"strategy","parameterTypes":[] }, {"name":"type","parameterTypes":[] }, {"name":"value","parameterTypes":[] }]
@@ -5871,6 +5912,9 @@
 },
 {
   "name":"org.hibernate.persister.entity.mutation.InsertCoordinator"
+},
+{
+  "name":"org.hibernate.persister.entity.mutation.UpdateCoordinatorStandard"
 },
 {
   "name":"org.hibernate.persister.internal.PersisterFactoryImpl",
@@ -6513,6 +6557,18 @@
   "queryAllDeclaredMethods":true
 },
 {
+  "name":"org.springframework.boot.autoconfigure.data.redis.RedisUrlSyntaxFailureAnalyzer",
+  "queryAllDeclaredConstructors":true,
+  "queryAllPublicConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.springframework.boot.autoconfigure.diagnostics.analyzer.NoSuchBeanDefinitionFailureAnalyzer",
+  "queryAllDeclaredConstructors":true,
+  "queryAllPublicConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":["org.springframework.beans.factory.BeanFactory"] }]
+},
+{
   "name":"org.springframework.boot.autoconfigure.freemarker.FreeMarkerTemplateAvailabilityProvider",
   "queryAllPublicConstructors":true,
   "methods":[{"name":"<init>","parameterTypes":[] }]
@@ -6616,6 +6672,12 @@
   "queryAllDeclaredMethods":true
 },
 {
+  "name":"org.springframework.boot.autoconfigure.jdbc.DataSourceBeanCreationFailureAnalyzer",
+  "queryAllDeclaredConstructors":true,
+  "queryAllPublicConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":["org.springframework.core.env.Environment"] }]
+},
+{
   "name":"org.springframework.boot.autoconfigure.jdbc.DataSourceProperties",
   "allDeclaredFields":true,
   "queryAllDeclaredMethods":true,
@@ -6628,6 +6690,12 @@
 {
   "name":"org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration$JdbcTransactionManagerConfiguration",
   "queryAllDeclaredMethods":true
+},
+{
+  "name":"org.springframework.boot.autoconfigure.jdbc.HikariDriverConfigurationFailureAnalyzer",
+  "queryAllDeclaredConstructors":true,
+  "queryAllPublicConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
 },
 {
   "name":"org.springframework.boot.autoconfigure.jdbc.JdbcClientAutoConfiguration",
@@ -6658,6 +6726,12 @@
 {
   "name":"org.springframework.boot.autoconfigure.jdbc.metadata.DataSourcePoolMetadataProvidersConfiguration$HikariPoolDataSourceMetadataProviderConfiguration",
   "queryAllDeclaredMethods":true
+},
+{
+  "name":"org.springframework.boot.autoconfigure.jooq.NoDslContextBeanFailureAnalyzer",
+  "queryAllDeclaredConstructors":true,
+  "queryAllPublicConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":["org.springframework.beans.factory.BeanFactory"] }]
 },
 {
   "name":"org.springframework.boot.autoconfigure.kafka.ConcurrentKafkaListenerContainerFactoryConfigurer",
@@ -6750,6 +6824,30 @@
   "allDeclaredFields":true,
   "queryAllDeclaredMethods":true,
   "methods":[{"name":"setAutoStartup","parameterTypes":["boolean"] }]
+},
+{
+  "name":"org.springframework.boot.autoconfigure.r2dbc.ConnectionFactoryBeanCreationFailureAnalyzer",
+  "queryAllDeclaredConstructors":true,
+  "queryAllPublicConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":["org.springframework.core.env.Environment"] }]
+},
+{
+  "name":"org.springframework.boot.autoconfigure.r2dbc.MissingR2dbcPoolDependencyFailureAnalyzer",
+  "queryAllDeclaredConstructors":true,
+  "queryAllPublicConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.springframework.boot.autoconfigure.r2dbc.MultipleConnectionPoolConfigurationsFailureAnalyzer",
+  "queryAllDeclaredConstructors":true,
+  "queryAllPublicConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.springframework.boot.autoconfigure.r2dbc.NoConnectionFactoryBeanFailureAnalyzer",
+  "queryAllDeclaredConstructors":true,
+  "queryAllPublicConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
 },
 {
   "name":"org.springframework.boot.autoconfigure.reactor.ReactorAutoConfiguration",
@@ -7096,6 +7194,12 @@
   "methods":[{"name":"<init>","parameterTypes":[] }]
 },
 {
+  "name":"org.springframework.boot.context.config.ConfigDataNotFoundFailureAnalyzer",
+  "queryAllDeclaredConstructors":true,
+  "queryAllPublicConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
   "name":"org.springframework.boot.context.config.ConfigDataProperties",
   "queryAllDeclaredConstructors":true,
   "fields":[{"name":"this$0"}],
@@ -7155,8 +7259,119 @@
   "queryAllDeclaredMethods":true
 },
 {
+  "name":"org.springframework.boot.context.properties.IncompatibleConfigurationFailureAnalyzer",
+  "queryAllDeclaredConstructors":true,
+  "queryAllPublicConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.springframework.boot.context.properties.NotConstructorBoundInjectionFailureAnalyzer",
+  "queryAllDeclaredConstructors":true,
+  "queryAllPublicConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
   "name":"org.springframework.boot.context.properties.bind.Name",
   "queryAllDeclaredMethods":true
+},
+{
+  "name":"org.springframework.boot.diagnostics.FailureAnalyzers",
+  "queryAllPublicConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":["org.springframework.context.ConfigurableApplicationContext"] }]
+},
+{
+  "name":"org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter",
+  "queryAllPublicConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.springframework.boot.diagnostics.analyzer.BeanCurrentlyInCreationFailureAnalyzer",
+  "queryAllDeclaredConstructors":true,
+  "queryAllPublicConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":["org.springframework.beans.factory.BeanFactory"] }]
+},
+{
+  "name":"org.springframework.boot.diagnostics.analyzer.BeanDefinitionOverrideFailureAnalyzer",
+  "queryAllDeclaredConstructors":true,
+  "queryAllPublicConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.springframework.boot.diagnostics.analyzer.BeanNotOfRequiredTypeFailureAnalyzer",
+  "queryAllPublicConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.springframework.boot.diagnostics.analyzer.BindFailureAnalyzer",
+  "queryAllDeclaredConstructors":true,
+  "queryAllPublicConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.springframework.boot.diagnostics.analyzer.BindValidationFailureAnalyzer",
+  "queryAllDeclaredConstructors":true,
+  "queryAllPublicConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.springframework.boot.diagnostics.analyzer.InvalidConfigurationPropertyNameFailureAnalyzer",
+  "queryAllDeclaredConstructors":true,
+  "queryAllPublicConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.springframework.boot.diagnostics.analyzer.InvalidConfigurationPropertyValueFailureAnalyzer",
+  "queryAllDeclaredConstructors":true,
+  "queryAllPublicConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":["org.springframework.core.env.Environment"] }]
+},
+{
+  "name":"org.springframework.boot.diagnostics.analyzer.MissingParameterNamesFailureAnalyzer",
+  "queryAllDeclaredConstructors":true,
+  "queryAllPublicConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.springframework.boot.diagnostics.analyzer.MutuallyExclusiveConfigurationPropertiesFailureAnalyzer",
+  "queryAllDeclaredConstructors":true,
+  "queryAllPublicConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":["org.springframework.core.env.Environment"] }]
+},
+{
+  "name":"org.springframework.boot.diagnostics.analyzer.NoSuchMethodFailureAnalyzer",
+  "queryAllDeclaredConstructors":true,
+  "queryAllPublicConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.springframework.boot.diagnostics.analyzer.NoUniqueBeanDefinitionFailureAnalyzer",
+  "queryAllDeclaredConstructors":true,
+  "queryAllPublicConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":["org.springframework.beans.factory.BeanFactory"] }]
+},
+{
+  "name":"org.springframework.boot.diagnostics.analyzer.PatternParseFailureAnalyzer",
+  "queryAllDeclaredConstructors":true,
+  "queryAllPublicConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.springframework.boot.diagnostics.analyzer.PortInUseFailureAnalyzer",
+  "queryAllDeclaredConstructors":true,
+  "queryAllPublicConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.springframework.boot.diagnostics.analyzer.UnboundConfigurationPropertyFailureAnalyzer",
+  "queryAllDeclaredConstructors":true,
+  "queryAllPublicConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.springframework.boot.diagnostics.analyzer.ValidationExceptionFailureAnalyzer",
+  "queryAllDeclaredConstructors":true,
+  "queryAllPublicConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
 },
 {
   "name":"org.springframework.boot.env.EnvironmentPostProcessorApplicationListener",
@@ -7209,6 +7424,10 @@
   "name":"org.springframework.boot.jdbc.metadata.DataSourcePoolMetadataProvider",
   "queryAllDeclaredMethods":true,
   "queryAllPublicMethods":true
+},
+{
+  "name":"org.springframework.boot.liquibase.LiquibaseChangelogMissingFailureAnalyzer",
+  "queryAllPublicConstructors":true
 },
 {
   "name":"org.springframework.boot.loader.launch.LaunchedClassLoader",
@@ -7311,6 +7530,12 @@
   "queryAllPublicMethods":true
 },
 {
+  "name":"org.springframework.boot.web.context.MissingWebServerFactoryBeanFailureAnalyzer",
+  "queryAllDeclaredConstructors":true,
+  "queryAllPublicConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
   "name":"org.springframework.boot.web.context.ServerPortInfoApplicationContextInitializer",
   "queryAllPublicConstructors":true,
   "methods":[{"name":"<init>","parameterTypes":[] }]
@@ -7319,6 +7544,12 @@
   "name":"org.springframework.boot.web.embedded.netty.NettyReactiveWebServerFactory",
   "queryAllDeclaredMethods":true,
   "methods":[{"name":"getShutdown","parameterTypes":[] }, {"name":"getWebServer","parameterTypes":["org.springframework.http.server.reactive.HttpHandler"] }, {"name":"setShutdown","parameterTypes":["org.springframework.boot.web.server.Shutdown"] }]
+},
+{
+  "name":"org.springframework.boot.web.embedded.tomcat.ConnectorStartFailureAnalyzer",
+  "queryAllDeclaredConstructors":true,
+  "queryAllPublicConstructors":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
 },
 {
   "name":"org.springframework.boot.web.reactive.context.GenericReactiveWebApplicationContext"
