@@ -10,7 +10,7 @@
 |Hibernate |6.4.1.Final|
 |Spring    |6.1.3      |
 |Springboot|3.2.2      |
-|Ideahut   |3.2.2-3.2.0|
+|Ideahut   |3.2.2-3.2.1|
 
 ## [Docker](https://www.docker.com/) <img height="32" src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/97_Docker_logo_logos-1024.png" alt="">
 
