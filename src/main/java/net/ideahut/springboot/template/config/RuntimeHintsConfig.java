@@ -1,9 +1,8 @@
 package net.ideahut.springboot.template.config;
 
 import java.io.File;
-import java.util.ArrayList;
+import java.util.Collection;
 import java.util.LinkedHashSet;
-import java.util.List;
 import java.util.Set;
 
 import org.springframework.aot.hint.RuntimeHints;
@@ -44,6 +43,7 @@ public class RuntimeHintsConfig {
 	
 	private static final File serializationFile = new File("serialization.tmp");
 	private static final File metadataFile = new File("src/main/resources/META-INF/native-image");
+	
 	public static void registerToNativeImageAgent(ApplicationContext applicationContext) {
 		ObjectHelper.runIf(
 			!FrameworkHelper.inNativeImage().booleanValue() &&  
@@ -52,7 +52,7 @@ public class RuntimeHintsConfig {
 		);
 	}
 	
-	private static List<Class<?>> collectClasses(ApplicationContext applicationContext) {
+	private static Collection<Class<?>> collectClasses(ApplicationContext applicationContext) {
 		StringSet names = new StringSet(NativeImageHelper.Module.allModuleClassNames(applicationContext));
 		names.addAll(NativeImageHelper.Module.getJsonWebTokenClassNames());
 		names.addAll(NativeImageHelper.getAllClassNameInPackage("org.springframework.data.domain", false, true)); // untuk repo
@@ -72,9 +72,7 @@ public class RuntimeHintsConfig {
 		classes.add(HessianBinarySerializer.class);
 		classes.addAll(ApiConfigHelper.getAllDefaultProcessors());
 		
-		List<Class<?>> list = new ArrayList<>(classes);
-		classes.clear();
-		return list;
+		return classes;
 	}
 	
 	
